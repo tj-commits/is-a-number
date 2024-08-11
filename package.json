@@ -1,6 +1,6 @@
 {
   "name": "is-actual-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if a value is a number. Way better than is-number.",
   "main": "index.js",
   "scripts": {
