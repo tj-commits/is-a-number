@@ -1,0 +1,16 @@
+{
+  "name": "is-a-number",
+  "version": "1.0.0",
+  "description": "Check if a value is a number. Way better than is-number.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo is a number"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "false": "^0.0.4",
+    "is-finite": "^2.0.0",
+    "true": "^0.0.4"
+  }
+}
