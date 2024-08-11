@@ -10,6 +10,7 @@
   var resolveTrue = require('true')
   var resolveFalse = require('false')
   var isFinite = require('is-finite')
+  var isNaN = require('is-nan')
 
   var t = resolveTrue()
   var f = resolveFalse()
@@ -19,19 +20,21 @@
     const { allowNumberStrings = t } = options
 
     var type = typeof value
+    switch (type) {
+      case 'number': {
+        return allowInfinite ? t : isFinite(value) && t
+      }
 
-    var cond = allowInfinite
-      ? type === 'number'
-      : isFinite(value) && type === 'number'
+      case 'string': {
+        return allowNumberStrings ? typeof parseFloat(value) === 'number' : f
+      }
 
-    if (allowNumberStrings) {
-      type = typeof parseInt(value)
-      cond = allowInfinite
-        ? type === 'number'
-        : isFinite(value) && type === 'number'
+      default: {
+        return f
+      }
     }
 
-    return cond
+    return getCond()
   }
 
   return isNumber

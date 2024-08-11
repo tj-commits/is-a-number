@@ -1,5 +1,5 @@
 {
-  "name": "is-a-number",
+  "name": "is-actual-number",
   "version": "1.0.0",
   "description": "Check if a value is a number. Way better than is-number.",
   "main": "index.js",
@@ -11,6 +11,8 @@
   "dependencies": {
     "false": "^0.0.4",
     "is-finite": "^2.0.0",
+    "is-nan": "^1.3.2",
     "true": "^0.0.4"
-  }
+  },
+  "repository": "https://github.com/tj-commits/is-a-number"
 }
