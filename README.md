@@ -3,13 +3,13 @@
 
 ### Installation
 NPM:
-`npm i is-a-number`
+`npm i is-actual-number`
 
 Yarn:
-`yarn add is-a-number`
+`yarn add is-actual-number`
 
 PNPM:
-`pnpm add is-a-number`
+`pnpm add is-actual-number`
 
 ### Usage
 ```javascript
